@@ -3,5 +3,4 @@ const Main = () => (
     <h1>React Avançado</h1>
   </div>
 );
-sadasdas
 export default Main;
