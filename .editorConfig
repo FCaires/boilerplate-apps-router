@@ -1,0 +1,10 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space #para identação
+indent_size = 2 #2 espaços
+end_of_line = lf # lf como final de linha
+charset = utf-8
+trim_trailing_whitespace = true #tirar o whitespace de final de linha e arquivo
+insert_final_newline = true #inserir uma linha no final
