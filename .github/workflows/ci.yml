@@ -2,7 +2,7 @@ build:
   runs-on: ubuntu-latest
   steps:
     - name: Checkout Repository
-      user: actions/checkout@v3 #Checar o repositorio
+      uses: actions/checkout@v3 #Checar o repositorio
 
     - name: Setup Node
       uses: actions/setup-node@v3 #Fazer o setup do node
