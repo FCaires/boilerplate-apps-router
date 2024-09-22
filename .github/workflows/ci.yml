@@ -1,0 +1,23 @@
+build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout Repository
+      user: actions/checkout@v3 #Checar o repositorio
+
+    - name: Setup Node
+      uses: actions/setup-node@v3 #Fazer o setup do node
+      with:
+        node-version: 18.x
+        cache: "npm"
+
+    - name: Install dependencies #Instalar todas as dependencias
+      run: npm install
+
+    - name: Linting #Rodar o lint
+      run: npm run lint
+
+    - name: Testing #Rodar os testes
+      run: npm run test
+
+    - name: Build #Fazer o build
+      run: npm run build
